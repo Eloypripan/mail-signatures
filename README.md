@@ -100,6 +100,7 @@ Lo primero que debes hacer es asegurarte de que tienes definida la configuració
 [
   {
     "id": "",
+    "template": "",
     "output_path": "",
     "main_font": "",
     "name_font": "",
@@ -126,6 +127,7 @@ Lo primero que debes hacer es asegurarte de que tienes definida la configuració
 Donde todas son obligatorias salvo las que se especifican como opcionales y significan:
 
 - `id` es el nombre de la firma que se mostrará a la hora de seleccionarla.
+- `template` es el nombre de la plantilla a usar dentro de la carpeta `templates`.
 - `output_path` es el nombre de la carpeta en la que se generarán este tipo de firmas.
 - `main_font` es la fuente de texto principal de la firma.
 - `name_font` es la fuente de texto del nombre de la persona.

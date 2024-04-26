@@ -1,6 +1,7 @@
 [
   {
     "id": "DEFC",
+    "template": "original",
     "output_path": "DEFC",
     "main_font": "Montserrat",
     "name_font": "Open Sans",
@@ -51,6 +52,7 @@
   },
   {
     "id": "DGE",
+    "template": "original",
     "output_path": "DGE",
     "main_font": "Montserrat",
     "name_font": "Open Sans",
@@ -95,6 +97,7 @@
   },
   {
     "id": "AMAT",
+    "template": "original",
     "output_path": "AMAT",
     "main_font": "Montserrat",
     "name_font": "Open Sans",

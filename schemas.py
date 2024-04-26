@@ -3,6 +3,7 @@ from schema import Schema, Optional, And
 S_CONFIG = Schema(
     {
         "id": str,
+        "template": str,
         "output_path": str,
         "main_font": str,
         "name_font": str,

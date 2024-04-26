@@ -72,7 +72,8 @@ def load_signatures_list():
         return None
 
 
-def gen_signatures(config, signatures_list, template_path):
+def gen_signatures(config, signatures_list, template_name):
+    template_path = "templates/" + template_name + ".html.j2"
     env = Environment(loader=FileSystemLoader("."))
     template = env.get_template(template_path)
     cols = {
@@ -121,7 +122,7 @@ def main():
     signatures_list = load_signatures_list()
     if signatures_list is None:
         return
-    gen_signatures(config, signatures_list, "template.html.j2")
+    gen_signatures(config, signatures_list, config["template"])
 
 
 if __name__ == "__main__":
