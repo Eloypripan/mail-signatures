@@ -138,5 +138,38 @@
         "alt": "🎓"
       }
     ]
+  },
+  {
+    "id": "ENEM",
+    "template": "wide-logo",
+    "output_path": "ENEM",
+    "main_font": "Montserrat",
+    "name_font": "Lexend Deca",
+    "name_image": "https://raw.githubusercontent.com/ComicIvans/mail-signatures/6ef0a34df61949c2acac5fbde3e6617db171d1ab/ENEM/img/ENEM.png",
+    "color": "#FF6B6B",
+    "organization": "Encuentro Nacional de Estudiantes de Matemáticas",
+    "max_width": 420,
+    "links": [
+      {
+        "url": "https://enem.anem.es/2025/",
+        "image": "https://raw.githubusercontent.com/ComicIvans/mail-signatures/be297f82940785e12bbd1d9a0fe6ad57ed61d52b/ENEM/img/Web.png",
+        "alt": "🌐"
+      },
+      {
+        "url": "https://instagram.com/enem.mat",
+        "image": "https://raw.githubusercontent.com/ComicIvans/mail-signatures/be297f82940785e12bbd1d9a0fe6ad57ed61d52b/ENEM/img/Instagram.png",
+        "alt": "📷"
+      },
+      {
+        "url": "https://x.com/ENEM_mat",
+        "image": "https://raw.githubusercontent.com/ComicIvans/mail-signatures/be297f82940785e12bbd1d9a0fe6ad57ed61d52b/ENEM/img/X.png",
+        "alt": "X"
+      },
+      {
+        "url": "https://t.me/ENEMGRX",
+        "image": "https://raw.githubusercontent.com/ComicIvans/mail-signatures/be297f82940785e12bbd1d9a0fe6ad57ed61d52b/ENEM/img/Telegram.png",
+        "alt": "💬"
+      }
+    ]
   }
 ]
