@@ -83,7 +83,9 @@ Simplemente hay que irse a la configuración de la cuenta, marcar la casilla de 
 
 Primero hay que abrir en el navegador el archivo HTML de la firma, seleccionarlo todo con <kbd>Ctrl</kbd> + <kbd>A</kbd> y copiarlo con <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
-En otra ventana con Gmail, hay que irse a los ajustes, ver todos los ajustes y, en la pestaña "General", al apartado de "Firma". Se crea una firma nueva y, en el campo de texto, se pega la firma con <kbd>Ctrl</kbd> + <kbd>V</kbd>.
+En otra ventana con Gmail, hay que irse a los ajustes, ver todos los ajustes y, en la pestaña «General», al apartado de «Firma». Se crea una firma nueva y, en el campo de texto, se pega la firma con <kbd>Ctrl</kbd> + <kbd>V</kbd>.
+
+No olvidar tampoco cambiar los «Valores predeterminados de firma» a la firma recién creada para que aparezca y guardar los cambios con el botón del final de la página.
 
 ![Captura de pantalla de la firma y los ajustes de Gmail](img/gmail.png)
 
@@ -110,7 +112,7 @@ Pues para webmail recomiendo solo copiar la parte de
 <div>...</div>
 ```
 
-Y pegarla en el apartado de configuración de Webmail, en "Identidades", dándole al botón que hay más a la derecha que parece `< >`. Este botón es para editar la firma como HTML. Se abrirá una ventana donde hay que pegar el código copiado, sustituyendo todo lo que hubiera antes.
+Y pegarla en el apartado de configuración de Webmail, en «Identidades», dándole al botón que hay más a la derecha que parece `< >`. Este botón es para editar la firma como HTML. Se abrirá una ventana donde hay que pegar el código copiado, sustituyendo todo lo que hubiera antes.
 
 ![Captura de pantalla de la ventana de configuración de la cuenta de Webmail](img/webmail.png)
 
@@ -198,7 +200,7 @@ Finalmente se pueden generar las firmas con `python3 generator.py`.
 
 ## Clientes de correo soportados
 
-Las pruebas no han sido muy exhaustivas, pero la firma en algunos sitios va bien :green*circle:, regulinchi *(se ve bien en general pero puede fallar en algún detalle)\_ :yellow_circle: y mal :red_circle:. Esta es la lista:
+Las pruebas no han sido muy exhaustivas, pero la firma en algunos sitios va bien :green_circle:, regulinchi *(se ve bien en general pero puede fallar en algún detalle)* :yellow_circle: y mal :red_circle:. Esta es la lista:
 
 :green_circle: Webmail
 
