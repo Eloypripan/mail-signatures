@@ -47,6 +47,8 @@ Primero hay que abrir en el navegador el archivo HTML de la firma, seleccionarlo
 
 En otra ventana con Gmail, hay que irse a los ajustes, ver todos los ajustes y, en la pestaña «General», al apartado de «Firma». Se crea una firma nueva y, en el campo de texto, se pega la firma con <kbd>Ctrl</kbd> + <kbd>V</kbd>.
 
+No olvidar tampoco cambiar los «Valores predeterminados de firma» a la firma recién creada para que aparezca y guardar los cambios con el botón del final de la página.
+
 ![Captura de pantalla de la firma y los ajustes de Gmail](../img/gmail.png)
 
 ### En Thunderbird
