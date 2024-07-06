@@ -8,6 +8,7 @@ Aquí también se guardarán todas las firmas HTML que vaya haciendo para los co
 - [Delegación General de Estudiantes (DGE)](https://dge.ugr.es)
 - [Asociación de Estudiantes de Matemáticas y Estadística de la UGR (AMAT)](https://amatugr.es)
 - [Coordinadora de Representantes de Estudiantes de Universidades Públicas](https://www.creup.es)
+- [XXVI Encuentro Nacional de Estudiantes de Matemáticas](https://enem.anem.es/2025)
 
 Las firmas partieron de una base que supongo que será de @jesusjmma y, actualmente, utilizan iconos de [Tabler Icons](https://tabler-icons.io)
 
@@ -56,6 +57,16 @@ Cuando los iconos cargan, la firma se debería de ver así:
 Y cuando no cargan, así:
 
 ![Firma de Iván Salido Cobo como Vocal de Digitalización y Transparencia de CREUP en la que los iconos no cargan](img/creup-no-icons.png)
+
+### Ejemplo de firma del ENEM
+
+Cuando los iconos cargan, la firma se debería de ver así:
+
+![Firma de Iván Salido Cobo como Secretario y Tesorero del XXVI ENEM en la que los iconos cargan](img/enem.png)
+
+Y cuando no cargan, así:
+
+![Firma de Iván Salido Cobo como Secretario y Tesorero del XXVI ENEM en la que los iconos no cargan](img/enem-no-icons.png)
 
 ## Cómo usar las firmas
 
