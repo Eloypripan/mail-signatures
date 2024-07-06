@@ -149,7 +149,9 @@ Lo primero que debes hacer es asegurarte de que tienes definida la configuració
         "image": "",
         "alt": ""
       }
-    ]
+    ],
+    "footer_address": "",
+    "footer_text": ""
   }
 ]
 ```
