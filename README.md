@@ -7,8 +7,8 @@ Aquí también se guardarán todas las firmas HTML que vaya haciendo para los co
 - [Delegación de Estudiantes de la Facultad de Ciencias (DEFC)](https://defc.ugr.es)
 - [Delegación General de Estudiantes (DGE)](https://dge.ugr.es)
 - [Asociación de Estudiantes de Matemáticas y Estadística de la UGR (AMAT)](https://amatugr.es)
-- [Coordinadora de Representantes de Estudiantes de Universidades Públicas](https://www.creup.es)
-- [XXVI Encuentro Nacional de Estudiantes de Matemáticas](https://enem.anem.es/2025)
+- [Coordinadora de Representantes de Estudiantes de Universidades Públicas (CREUP)](https://www.creup.es)
+- [XXVI Encuentro Nacional de Estudiantes de Matemáticas (ENEM)](https://enem.anem.es/2025)
 
 Las firmas partieron de una base que supongo que será de @jesusjmma y, actualmente, utilizan iconos de [Tabler Icons](https://tabler-icons.io)
 
