@@ -23,6 +23,8 @@ S_CONFIG = Schema(
                 "alt": str,
             }
         ],
+        Optional("footer_address"): str,
+        Optional("footer_text"): str,
     }
 )
 
@@ -45,6 +47,7 @@ S_SIGNATURES_LIST = Schema(
             "main_font",
             "name_font",
             "max_width",
+            "name_image",
         ],
         lambda l: (
             len(set(REQ_COLUMNS_SIGNATURES_LIST).intersection(l))

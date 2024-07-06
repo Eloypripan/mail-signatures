@@ -7,8 +7,9 @@ Aquí también se guardarán todas las firmas HTML que vaya haciendo para los co
 - [Delegación de Estudiantes de la Facultad de Ciencias (DEFC)](https://defc.ugr.es)
 - [Delegación General de Estudiantes (DGE)](https://dge.ugr.es)
 - [Asociación de Estudiantes de Matemáticas y Estadística de la UGR (AMAT)](https://amatugr.es)
+- [Coordinadora de Representantes de Estudiantes de Universidades Públicas](https://www.creup.es)
 
-Las firmas parten de una base que supongo que será de @jesusjmma y, actualmente, utilizan iconos de [Tabler Icons](https://tabler-icons.io)
+Las firmas partieron de una base que supongo que será de @jesusjmma y, actualmente, utilizan iconos de [Tabler Icons](https://tabler-icons.io)
 
 ---
 
@@ -46,16 +47,34 @@ Y cuando no cargan, así:
 
 ![Firma de Iván Salido Cobo como Secretario de AMAT en la que los iconos no cargan](img/amat-no-icons.png)
 
+### Ejemplo de firma de CREUP
+
+Cuando los iconos cargan, la firma se debería de ver así:
+
+![Firma de Iván Salido Cobo como Vocal de Digitalización y Transparencia de CREUP en la que los iconos cargan](img/creup.png)
+
+Y cuando no cargan, así:
+
+![Firma de Iván Salido Cobo como Vocal de Digitalización y Transparencia de CREUP en la que los iconos no cargan](img/creup-no-icons.png)
+
 ## Cómo usar las firmas
 
 > [!IMPORTANT]
-> Estas instrucciones se revisaron por última vez el 26 de abril de 2024, es posible que ya no sirvan.
+> Estas instrucciones se revisaron por última vez el 6 de julio de 2024, es posible que ya no sirvan.
 
 ### En Thunderbird
 
 Simplemente hay que irse a la configuración de la cuenta, marcar la casilla de utilizar un archivo como firma y seleccionar el archivo de firma descargado:
 
 ![Captura de pantalla de la ventana de configuración de la cuenta de Thunderbird](img/thunderbird.png)
+
+### En Gmail
+
+Primero hay que abrir en el navegador el archivo HTML de la firma, seleccionarlo todo con <kbd>Ctrl</kbd> + <kbd>A</kbd> y copiarlo con <kbd>Ctrl</kbd> + <kbd>C</kbd>.
+
+En otra ventana con Gmail, hay que irse a los ajustes, ver todos los ajustes y, en la pestaña "General", al apartado de "Firma". Se crea una firma nueva y, en el campo de texto, se pega la firma con <kbd>Ctrl</kbd> + <kbd>V</kbd>.
+
+![Captura de pantalla de la firma y los ajustes de Gmail](img/gmail.png)
 
 ### En Webmail
 
@@ -141,6 +160,8 @@ Donde todas son obligatorias salvo las que se especifican como opcionales y sign
 - `opt_mail` _(OPCIONAL)_ es por si no hay número de teléfono y se quiere mostrar un segundo correo genérico.
 - `max_width` _(OPCIONAL)_ es por si se quiere limitar la longitud horizontal máxima de la firma para que si el nombre de la organización es demasiado largo se parta en varias líneas.
 - `links` _(OPCIONAL)_ es la lista de enlaces incluídos en la firma donde cada enlace tiene que ser un objeto con la URL `url`, el enlace a su imagen, `image` y el texto (o emoji) a mostrar si la imagen no carga, `alt`.
+- `footer_address` _(OPCIONAL)_ es una dirección postal para incluir al final de la firma.
+- `footer_text` _(OPCIONAL)_ es un texto para incluir al final de la firma, tras la dirección postal, si la hay.
 
 Una vez esté la configuración definida hay que crear la lista de firmas a generar, que es un archivo CSV con el nombre que se quiera (`signatures_list.csv` por defecto) que debe seguir la siguiente estructura:
 
@@ -153,7 +174,7 @@ Una vez esté la configuración definida hay que crear la lista de firmas a gene
 - También se pueden incluir las siguientes columnas que, en caso de tener algo, sustituirán a lo que haya especificado en la configuración general de la firma. Se puede escribir `None` en la fila si se quiere eliminar para esa firma concreta un valor de configuración por defecto de los que eran opcionales.
 
 ```json
-["output", "phone", "phone_country_code", "internal_phone", "opt_mail", "organization_extra", "main_font", "name_font", "max_width"]
+["output", "phone", "phone_country_code", "internal_phone", "opt_mail", "organization_extra", "main_font", "name_font", "max_width", "name_image"]
 ```
 
 Es recomendable añadir la columna `output` para especificar el nombre del archivo en el que guardar la firma.

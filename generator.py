@@ -6,7 +6,7 @@ from schemas import is_config, is_signatures_list
 
 def select_config(path):
     try:
-        with open(path, "r") as file:
+        with open(path, "r", encoding="utf-8") as file:
             config = json.load(file)
             if type(config) is not list or len(config) == 0:
                 print("No se ha encontrado ninguna configuración válida.")
@@ -45,15 +45,15 @@ def select_config(path):
         return None
 
 
-def load_signatures_list():
+def load_signatures_list(id):
     path = (
         input(
-            "Introduce la ruta del archivo CSV con la lista de firmas a realizar (signatures_list.csv): "
+            f"Introduce la ruta del archivo CSV con la lista de firmas a realizar ({id}_list.csv): "
         ).strip()
-        or "signatures_list.csv"
+        or f"{id}_list.csv"
     )
     try:
-        with open(path, newline="") as file:
+        with open(path, newline="", encoding="utf-8") as file:
             signatures_list = list(csv.reader(file, delimiter=",", quotechar='"'))
             if not is_signatures_list(signatures_list):
                 print("La primera fila contiene nombres de columnas inválidos.")
@@ -108,7 +108,9 @@ def gen_signatures(config, signatures_list, template_name):
 
         content = template.render(local_config)
         with open(
-            local_config["output_path"] + "/" + local_config["output"] + ".html", "w"
+            local_config["output_path"] + "/" + local_config["output"] + ".html",
+            "w",
+            encoding="utf-8",
         ) as file:
             file.write(content)
         sign_count += 1
@@ -119,7 +121,7 @@ def main():
     config = select_config("signatures.json")
     if config is None:
         return
-    signatures_list = load_signatures_list()
+    signatures_list = load_signatures_list(config["id"].lower())
     if signatures_list is None:
         return
     gen_signatures(config, signatures_list, config["template"])
